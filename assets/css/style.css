@@ -6,10 +6,98 @@
     line-height: 30px;
     background-color: #ffffff;
 }
+img{
+    width:100%;
+
+}
+ul{ 
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
 .headerSec{
     background-color:#e79800;
     float: left;
     width: 100%;
     line-height: normal;
+}
+.contactUs {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    padding: 11px 0;
+}
+.lang{
+    float:right;
+}
+.lang .publicbtn {
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;}
+.contactUs i{
+    margin-right:5px;
 
+}
+
+.headerSec ul li{
+    display:inline-block;
+}
+.headerNav li a,.loginSec li a{
+    color: white;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px 12px 8px;
+    position: relative;
+    z-index: 2;
+    position: relative;
+}
+.lang  .dropdown-menu  li  a {
+    padding: 5px 10px;
+}
+.lang .dropdown-menu  li  a  i{
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+.publicbtn:hover, .publicbtn.active ,.open .dropdown-toggle.btn-default
+{
+        background: #000;
+        color: #fff;
+}
+.headerNav, .lang , .loginSec{
+    float: right;
+}
+.navMenu {
+    float: left;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+.logo{
+    float: left;
+    width: 100%;
+    padding: 22px 0;
+}
+.nav{
+
+        float: left;
+        width: 100%;
+        padding: 31px 0;
+}
+.nav ul{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.nav ul li{
+    display:inline-block;
+    position:relative;
 }
