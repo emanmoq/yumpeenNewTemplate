@@ -1,0 +1,15 @@
+.body{
+    color: #777777;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    background-color: #ffffff;
+}
+.headerSec{
+    background-color:#e79800;
+    float: left;
+    width: 100%;
+    line-height: normal;
+
+}
