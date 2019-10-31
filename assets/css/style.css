@@ -15,7 +15,7 @@ ul{
     padding:0;
     margin:0;
 }
-a{
+a:hover {
     text-decoration: none;
 }
 .headerSec{
@@ -81,23 +81,35 @@ a{
     background: #fff;
     position: relative;
 }
-.logo{
-    float: left;
-    width: 100%;
-    padding: 22px 0;
-}
-.nav{
-
-        float: left;
-        width: 100%;
-        padding: 31px 0;
-}
-.nav ul{
+.navbar-nav{
     float: left;
     width: 100%;
     text-align: center;
+
 }
-.nav ul li{
-    display:inline-block;
-    position:relative;
+.navbar-brand{
+    float: left;
+    width: 100%;
+    padding: 22px 0;
+    width:16%;
+}
+.navMenu .nav-link{
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
+color: #666666;
+font-size: 14px;
+text-transform: uppercase;
+font-weight: bold;
+padding: 10px 18px;
+position: relative;
+z-index: 2;}
+.nav-item:hover,.nav-item.active{
+    background-color: #e79800;
+}
+.nav-item:hover .nav-link,.nav-item.active .nav-link{
+    color:white;
+}
+.dropdown-toggle::after{
+    display: none;
 }
