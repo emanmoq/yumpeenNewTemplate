@@ -27,6 +27,25 @@ jQuery(function ($) {
             }
         }
     });
+    $('.testimonialSlider').owlCarousel({
+        loop:false,
+        margin:20,
+        nav:false,
+        dots:true,
+        responsive:{
+            0:{
+                items:1,
+                dots:false,
+            },
+            600:{
+                items:2,
+                dots:false,
+            },
+            1000:{
+                items:2
+            }
+        }
+    });
 
 });
 

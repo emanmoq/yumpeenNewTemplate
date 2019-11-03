@@ -1,7 +1,7 @@
 
 
 /*******************************************/
-.body{
+body{
     color: #777777;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -28,6 +28,9 @@ h1,  h2,  h3,  h4,  h5,  h6 {
     font-weight: 400;
     line-height: 1.2;
     margin: 0px 0px 0px 0px;
+}
+h3{
+    font-size:30px;
 }
 .headerSec{
     background-color:#e79800;
@@ -1155,6 +1158,266 @@ span.day {
             font-weight: 500;
         
     }
+    #plan{
+        background-color:#f3f3f3;
+    }
+    .PriceBox{
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgba(225, 225, 225, 0.5);
+        background-color: #fff;
+    }
+    .priceTitle{
+        text-transform: capitalize;
+        padding: 24px 0;
+        font-weight: 300;
+    }
+    .planPrice{
+        background-color: #f8f8f8;
+        display: block;
+        padding: 30px 0px;
+    }
+    .planPrice span{
+        font-weight: bold;
+        color:#3d3d3d;
+    }
+    .priceList{
+        padding: 24px 0 29px;
+    text-align: center;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #e8e8e8;
+}
+.priceList li{
+    margin-bottom: 23px;
+}
+.priceList li a{
+    color: #666;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all .2s;
+}
+.priceList li a:hover{
+    color:#e1a500 ;
+    transition: all .2s;
+}
+.testimonialItem {
+    padding: 0 15px;
+}
+.testimonialBox {
+    border: 1px solid #e1e1e1;
+  
+    padding: 23px 10px 24px 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.testimonialBox:before {
+    content: "";
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    width: 85%;
+    height: 2px;
+    position: absolute;
+    background-color:#e1a500
+}
+.testimonialBox:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.testemonialDesc{
+    padding-left:180px;
+}
+.testemonialDesc p{
+margin-bottom: 20px;}
+.testemonialDesc a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.testemonialDesc a span {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 4px;
+}
+.testimonialItem figure{
+    width: 122px;
+    left: 30px;
+    height: 122px;
+    float: left;
+}
+.testimonialSlider{
+    padding-top:30px
+}
+
+.testimonialSlider .owl-dots{
+    text-align: center;
+    line-height: 13px;
+    margin-top:30px;
+}
+.testimonialSlider .owl-dots .owl-dot{
+    background-color:transparent;
+    border:0;
+    padding: 0;
+}
+.testimonialSlider .owl-dots .owl-dot span {
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #c3c3c3;
+margin: 0 4px}
+    .testimonialSlider .owl-dots .owl-dot.active  span {
+        width: 15px;
+        height: 15px;
+        background-color:#e1a500}
+#subscribe {
+    padding: 30px 0;
+    border-bottom: 1px solid #7a7a7a;
+    background-color: #e79800;
+
+}
+.subscribText{
+    text-align: center;
+}
+.subscribText h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 13px 0px;
+    text-align: left;
+}  
+.subscribeForm{
+    text-align: center;
+}
+.subscibeEmail{
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 7px 125px 7px 15px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: transparent;
+    height: 50px;
+    font-size: 14px !important;
+    box-shadow: none;
+}
+.subscibeEmail:focus {
+    border-color: #fff !important;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3) !important;
+}
+.subscibeEmail::placeholder{
+    padding:10px;
+    font-size: 14px;
+    color:white;
+}
+.subscribeForm form{
+    position: relative;
+}
+.subscribebtn{
+    position: absolute;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    right: 0;
+    top: 0;
+    height: 100%;
+    vertical-align: middle;
+ 
+    height: 100%;
+    border:0 ;
+    border-left: 1px solid #fff;
+    background-color: transparent ;
+}
+.subscribebtn:hover{
+    background-color: black;
+}
+.subscribebtn i {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 1px;
+}
+#footer{
+    background-color: #1b1b1b;
+    padding: 40px 0 30px;
+}
+.footerTitle{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0px 0 30px;
+}
+.footerList ul li {
+    text-align: left;
+    font-size: 16px;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    margin-top:10px;
+}
+.footerList ul li  a{
+    color: #f9f9f9;
+    text-transform: capitalize;
+    position: relative;
+    padding: 5px 0px 5px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all .4s;
+}
+
+.footerList ul li  a:hover {
+    color: #e79800;
+    padding-left:20px;
+    transition: all .4s;
+}
+.footerList ul li a:before {
+    content: "\f105";
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    font-family: FontAwesome;
+    transition: all .2s;
+}
+.footerList ul li  a:hover::before {
+    left:10px;
+    transition: all .2s;
+}
+.instagram ul {
+    padding-top: 6px;
+    margin-bottom: -10px;
+}
+.instagram ul li {
+    margin: 0 10px 10px 0 !important;
+    width: 72px;
+    padding: 0px;
+    background-color: #000;
+    display: inline-block;
+}
+.instagram ul li a:before{
+    display: none;
+}
+.instagram ul li:hover{
+    opacity: .5;
+}
+.instagram ul img{
+    transition: all 0.3s ease-in-out;
+}
+.contact ul li {
+    margin-top: 10px;
+    color: #f9f9f9;}
+    .contact ul li a {
+        color: #f9f9f9;
+    }
+    #copyRight{
+        padding: 30px 0 30px;
+        background-color: #000;
+    }
+    
 @media (max-width:767px){
     .galleryCol{
         width:50%;
