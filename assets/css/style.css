@@ -55,6 +55,17 @@ h3{
     border: none;
     border-radius: 0;
     font-weight: bold;}
+    .caret {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+         vertical-align: middle;
+        border-top: 4px dashed;
+        border-top: 4px solid\9;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
 .contactUs i{
     margin-right:5px;
 
@@ -1001,6 +1012,9 @@ background-color:#2d2e32;
     right: 0;
     width: 50px;
 }
+#news{
+    background-color:#f7f7f7;
+}
 .newContainer{
     margin-bottom:30px;
     position: relative;
@@ -1059,8 +1073,7 @@ span.day {
     font-weight: bold;
     left: 50px;
     position: absolute;
-    top: -17px;
-    z-index: -1;}
+    top:24px;}
     .newContainer figcaption{
         transform: scale(1.5);
         transition: 0.6s all;
@@ -1449,8 +1462,91 @@ margin: 0 4px}
     .galleryCol{
         width:50%;
     }
+    .contactUs {
+        display:none;
+    }
+    .headerNav{
+        display:none;
+    }
+
+    .loginSec{
+        float: left !important;
+    }
+    .heroContent h2{
+        font-size:20px;
+    }
+    .heroContent span,.heroContent p ,.heroContent a{
+        display: none;
+    }
+    .sliderItem{
+        height:150px;
+    }
+    .EduConent{
+        width:100%;
+    }
+    #universityEdu:before{
+        width: 100%;
+        opacity: 0.1;
+    }
+    #courses  .nav-tabs {
+        border: medium none;
+        float: left;
+        margin-bottom: 20px;}
+        #courses .nav-tabs li {
+            margin: 0 0 0 8px;
+        }
+        .MemberSlider .owl-nav{
+            top:auto;
+            right:40%;
+        }
+        .trainingImg{
+            display: none;
+        }
+        .countDown div{
+            margin: 0px 1px;
+            width: 65px;
+        
+        }
+        .testimonialItem figure{
+            width: 100%;
+            height: auto;
+            position: static;
+        }
+        .testemonialDesc{
+            padding-left:10px;
+        }
+        .subscribText h5 {
+            text-align: center;
+            font-size: 18px;
+        }
+        .footerList{
+            margin-bottom: 30px;
+        }
+        .instagram{
+            margin-bottom: 30px;
+        }
+        .instagram ul li{
+            width:66px;
+        }
+        .footerLogo {
+            width: 77%;
+            margin: 0 auto;}
+            .heroSlider .owl-dot span{
+                width:12px;
+                height:12px;
+            }
+            .counterBox{
+                border-right: 0;
+            }
+            #training h2, #training h3{
+                font-size:30px;
+            }
+            #training h3{
+                font-size:20px;
+            }
 }
-@media (max-width:365px){
+@media (max-width:400px){
+    body{line-height: 24px;}
     .galleryCol{
         width:100%
     }
