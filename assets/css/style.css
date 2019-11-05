@@ -118,6 +118,9 @@ h3{
     padding: 22px 0;
     width:16%;
 }
+#navbarNavDropdown{
+    padding:0 20px;
+}
 .navMenu .nav-link{
     padding-right: 0;
     padding-left: 0;
@@ -126,7 +129,7 @@ color: #666666;
 font-size: 14px;
 text-transform: uppercase;
 font-weight: bold;
-padding: 10px 18px;
+padding: 10px 18px !important;
 position: relative;
 z-index: 2;}
 .nav-item:hover,.nav-item.active{
