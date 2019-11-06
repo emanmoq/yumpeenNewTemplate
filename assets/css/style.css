@@ -1464,6 +1464,85 @@ margin: 0 4px}
     margin-right:10px;
     width:15%;
 }
+#sideMenu{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: 350px;
+    overflow-x: none;
+    overflow-y: auto;
+    font-size: 15px;
+    background: #1c1c1c;
+    color: #fff;
+    padding: 30px;
+    display:none;
+    transition: all 2s;
+    left:0
+}
+.searchSec{
+width: 100%;
+margin-bottom: 30px;
+padding-bottom: 30px;
+border-bottom: solid 1px #CCC;}
+.searchSec input{
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 0 0 10px;
+    border: none;
+    background: rgba(0,0,0,0.1);
+    color: rgba(255,255,255,0.6);
+    display: block;
+    clear: both;
+    height: 40px;
+}
+.archives{
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #CCC;
+}
+#sideMenu h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    box-shadow: none;
+    color:white;
+}
+.archivesMenu{
+    display: block;
+    margin: 0 0 15px;
+}
+.archivesMenu li{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: all .5s;
+    padding:10px 0;
+}
+.archivesMenu li:hover{
+    background-color:#e79800;
+    transition: all .5s;
+}
+.archivesMenu li a i {
+    margin-right: 10px;
+}
+.archivesMenu li:hover .sideLink{
+    margin-left:10px;
+    transition: .5s all;
+}
+.archivesMenu li .sideLink{
+    transition: .5s all;
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: normal;
+    font-size: 14px;
+}
+.sideCopyRight{
+    font-size: 17px;
+    text-align: center;
+    color: #999;
+margin: 0 0 12px;
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
