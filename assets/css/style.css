@@ -810,11 +810,13 @@ opacity: 0;
     text-transform: uppercase;
     border:1px solid #e79800;
     color:#e79800;
+    transition: all .5s;
 }
 .viewallbtn:hover{
     background-color:black;
     color:white;
     border:1px solid white;
+    transition: all .5s;
 }
 .tab-content>.active {
     display: block !important;
@@ -1025,6 +1027,7 @@ background-color:#2d2e32;
     margin-bottom:30px;
     position: relative;
     transition: all .4s;
+    width:100%;
 }
 .newsDesc{
     padding: 25px 0 0px 0;
@@ -1542,6 +1545,271 @@ border-bottom: solid 1px #CCC;}
     text-align: center;
     color: #999;
 margin: 0 0 12px;
+}
+#innerbaner{
+    background-image:url("../images/inrbg.jpg");
+    width:100%;
+    padding: 51px 0 54px;
+    background-size:cover;
+    position: relative;
+    z-index: 2;
+}
+#innerbaner:before{
+    content:" ";
+    position: absolute;
+    background-color:rgba(0,0,0,.7);
+    width:100%;
+    left:0;
+    right:0;
+    top:0;
+    z-index: -1;
+    height:100%;}
+    .innerTitle{
+        text-align: left;
+        float: left;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+.innermenu{
+    text-align: right;
+    width: 50%;
+    padding: 12.5px 0 6px;
+    float: right;
+    line-height: 14px;
+}
+.innermenu li{
+    position: relative;
+    padding: 0px 10px;
+    display: inline-block;
+}
+.innermenu  li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 0 7px;
+    display: block;
+    line-height: 14px;}
+
+    .innermenu  li a:hover{
+        color:#e79800;
+    }
+.arrowbefore:before{
+    color: #fff;
+    content: "\f105";
+    font-family: fontawesome;
+    font-size: 12px;
+    font-weight: normal;
+    left: 0px;
+    margin-top: -7px;
+    position: absolute;
+    top: 50%;
+    line-height: normal;
+}
+.welcome{
+    width:100%;
+}
+.welcomeCont{
+    width:100%;
+    margin: -7px 0 30px 0;
+}
+.welcomeCont h5{    
+    color: #e79800;
+    text-transform: capitalize;
+    margin: 3px 0 11px;
+    font-size:20px;
+}
+.welcomeCont span{
+    font-size: 18px;
+    color: #333;
+    margin: -7px 0 21px;
+    display: block;
+}
+.welcomeCont p{
+    margin-bottom: 20px;
+}
+.weclomeBtn{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 34px;
+}
+.weclomeBtn:hover{
+    background-color:#e79800;
+    color:white;
+    transition: all .5s;
+}
+.welcomeImg{
+    width:100%;
+}
+.welcomeImg figure{
+    position: relative;
+}
+.welcomeImg figure:before{
+    content: "";
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    background-color: transparent;
+    opacity: 1;
+    border: 2px solid #fff;
+    z-index: 1;
+}
+#aboutCourses .categTitle{
+    margin-bottom:40px;
+}
+#students{
+    background-image:url("../images/studentbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+#students .categTitle h3{
+    color:white;
+}
+
+#students::before{
+    content: "";
+position: absolute;
+background-color:rgba(0,0,0,.8);
+left:0;
+top:0;
+width:100%;
+height:100%;
+z-index: -1;
+}
+.studentDesc{
+    color:white;
+    margin-top: 5px;
+    padding: 0 0 0 60px;
+}
+.studentDesc a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+.studentDesc a::before{
+    content: "\f10e";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 36px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 3px;
+    left: -58px;
+}
+.studentDesc span{
+    font-size: 16px;
+    font-weight: normal;
+    color: #999999;
+    display: block;
+}
+.studentDesc a:hover{
+    color:#e79800;
+}
+.studentsCarusel  .owl-nav{
+    float: right;
+}
+.studentsCarusel  .owl-nav button{
+    margin-right:15px;
+    height: 27px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 0;
+    width: 32px;
+    border-radius: 0;
+    background-color: #fff;
+    line-height: 27px;
+border:0;
+}
+.studentsCarusel .owl-nav button span{
+    font-size: 28px;
+    font-weight: bold;}
+    .studentsCarusel  .owl-nav button:hover{
+        background-position: 0 0;
+    }
+   .studentImg a{
+        border: 1px solid #fff;
+        float: left;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .studentsImages{
+        text-align: right;
+    }
+    .studentImg figure img{
+        filter: grayscale(100%);
+    }
+    .studentImg:hover img,.studentImg.active img{
+        filter:none;
+    }
+.eventNewsDesc:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+.eventNewsDesc:hover:before {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.newsDesc.eventNewsDesc {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px 278px 20px 29px;
+}
+
+.eventNewsDesc figure{
+    width: 261px;
+    right: 0;
+    top: 50%;
+    margin-top: -96px;  
+    position: absolute;
+
+}
+.newsDetails{
+    float: left;
+    padding: 25px 0 4px 0;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.newDetais{
+    padding: 25px 0 4px 0;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.eventNewsDesc.rightSide::before{
+   
+        right: 0;
+        left: 30px;
+}
+.eventNewsDesc.rightSide figure{
+left:0;
+}
+
+.newsDesc.eventNewsDesc.rightSide {
+    padding: 30px 29px 20px 278px;
+}
+#news.newsEvent{
+    background-color: white;
+}
+.Page.navigation{
+    margin: 0 auto;
 }
 @media (max-width:767px){
     .galleryCol{

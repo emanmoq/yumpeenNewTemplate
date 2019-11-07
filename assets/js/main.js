@@ -48,5 +48,14 @@ jQuery(function ($) {
     $("#menuIcon").click(function () {
         $("#sideMenu").toggle("slow");
     });
+    $('.studentsCarusel').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        items:1,
+        dots:false,
+        
+    });
+    
 });
 
