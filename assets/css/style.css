@@ -1811,6 +1811,29 @@ left:0;
 .Page.navigation{
     margin: 0 auto;
 }
+.newsEvent .page-item{
+    line-height: 1.5;
+
+    padding: 6px 5px;
+}
+.page-link{
+    color: #333333;  
+}
+
+.newsEvent .page-item:hover .page-link{
+    color:white;
+    background-color:#e1a500;
+}
+.page-item:first-child .page-link,.page-item:last-child .page-link{
+    border-radius: 0;
+}
+
+.page-link.prev  i {
+    margin-right: 12px;
+}
+.page-link.next  i {
+    margin-left: 12px;
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
