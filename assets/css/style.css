@@ -1480,7 +1480,7 @@ margin: 0 4px}
     color: #fff;
     padding: 30px;
     display:none;
-    transition: all 2s;
+    transition: all .5s;
     left:0
 }
 .searchSec{
