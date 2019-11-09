@@ -48,6 +48,13 @@ jQuery(function ($) {
     $("#menuIcon").click(function () {
         $("#sideMenu").toggle("fast");
     });
+    $(".imageSlider").owlCarousel({
+        loop: true,
+        autoplay:3000,
+        items:1,
+        dots:false,
+        
+    });
     $('.studentsCarusel').owlCarousel({
         loop: true,
         margin: 20,
@@ -56,6 +63,17 @@ jQuery(function ($) {
         dots:false,
         
     });
-    
+    $('.blogImgSlider').owlCarousel({
+        loop: true,
+        autoplay:3000,
+        margin: 20,
+        nav: true,
+        items:1,
+        dots:false,
+        
+    });
+
+
+
 });
 

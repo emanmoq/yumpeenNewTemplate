@@ -2022,6 +2022,247 @@ opacity:.7;
         font-weight: bold;
   
     }
+    .imageSlideritem figure::before{
+        border: 1px solid rgba(225, 225, 225, 0.5);
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    opacity: 1;
+    background-color: transparent;
+    outline: 1px solid rgba(225, 225, 225, 0.5);
+    outline-offset: 9px;
+
+    }
+    .EventDetailsDesc h4{
+        margin: 0px 0 20px 0;
+        display: block;
+        font-size: 26px;
+        text-transform: uppercase;
+        line-height: 26px;
+    }
+    .EventDetailsDesc h4 span{
+            color: #e79800;
+    }
+    .EventTime{
+        width: 100%;
+    border-bottom: 1px solid #e1a500;
+    padding-bottom: 20px;
+    }
+    .EventTime span{
+    margin-right: 29px;
+    font-size: 16px;
+    color: #999999;
+}
+    .EventTime span i{
+        margin-right: 10px;
+    }
+    .EventDescription{
+        width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9e9e9
+    }
+    .EventDescription h5{
+        font-size:20px;
+        margin: 0px 0 15px;
+        display: block;
+        color: #666;
+        font-weight: 300;
+    }
+    .EventDescription p{
+        margin-bottom:15px;
+    }
+    .EventDetailsbtn{
+        background-color:#e1a500;
+        color:white;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 30px;
+        margin-right: 11px;
+        display: inline-block;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    .EventDetailsbtn  i{
+        margin-right: 10px;
+        font-size: 12px;
+    
+    }
+    .EventDetailsbtn:hover{
+        background-color:black;
+    }
+.mapSec .EventDetailsbtn{
+
+    text-align: center;
+    }
+    #map{
+        height: 350px;
+        width: 100%;
+        margin-bottom:30px;
+    }
+    .EventSpeakers{
+        width: 100%;
+        padding: 34px 0 39px 0;
+        border-bottom: 1px solid #e9e9e9;
+        
+    }
+    .speakerBox{
+        text-align: center;
+        padding: 0px 0px 15px 0px;
+        border:0;
+        transition: all .5s;
+    }
+    .speakerBox:hover{
+        box-shadow :0px 10px 20px 0px rgba(0,0,0,0.3);
+        transition: all .5s;
+    }
+    .speakerBox .speakerBoxbody h5{
+        margin-bottom: 2px;
+        text-transform: uppercase;
+        font-weight: normal;
+font-size:20px;
+    }
+    .speakerBox .speakerBoxbody h5 a{
+        color:#e1a500
+    }
+    .speakerBox .speakerBoxbody p{
+        margin-bottom: 0;
+    }
+   .speakerBox .card-img-top{
+    margin-bottom: 20px;
+   }
+   .eventGallery{
+    width: 100%;
+    padding-top: 34px;
+   }
+   .eventGalleryimg{
+    margin-right: -10px;
+    margin-bottom: 20px;
+   }
+   .galleryImg{
+    margin: 0 10px 10px 0;
+    width:22%;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: #000;
+   }
+.galleryImg a,.galleryImg a img{
+    transition: all .3s ease-in-out;
+}
+   .galleryImg img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+   }
+   .eventbtn{
+    display: inline-block;
+    font-size: 15px;
+    color: #666666;
+    font-weight: normal;
+    padding: 8px 20px;
+    border: 1px solid #dbdbdb;
+    text-transform: uppercase;
+    
+   }
+  .eventbtn:hover{
+      background-color:#e1a500;
+      color:white;
+  }
+  .eventbtn  i{
+      margin-right:10px;
+  }
+  .eventbtn.next  i{
+    margin-left:10px;
+}
+.blogCont{margin-bottom:30px;
+position: relative;}
+.BlogDesc{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding: 26px 0 0 0;
+}
+.BlogCont:hover .blogTop span i{
+    color:#e1a500}
+
+.blogTop span i{
+    margin-right: 13px;
+
+}
+.blogTop{
+    margin-bottom: 22px;
+}
+.blogTop a{
+    color: #999999;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.blogTop span{
+    display: inline-block;
+    margin-right: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+.BlogSliderImg{
+    width: 77px;
+    position: absolute;
+    right: 30px;
+    top: -34px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    z-index: 2;
+}
+.BlogReadMore{
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 30px;
+    font-weight: bold;
+    line-height: 14px;
+    text-transform: uppercase;
+    border: 1px solid #e1a500;
+    color:#e1a500;  
+}
+.BlogReadMore:hover{
+    background-color:#e1a500;
+    color:white;
+}
+.BlogDesc h5{
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.BlogDesc p{
+    margin-bottom: 26px;
+    font-size: 16px;
+}
+.blogImgSlider button{
+    background: rgba(0, 0, 0, 0.2);
+   
+    border:  none;
+    border-radius: 0;
+    color: #fff;
+    font-size: 20px;
+    height: auto;
+    padding: 10px 25px;
+    width: auto;
+position: absolute;
+top:50%;
+}
+.blogImgSlider button span{
+    font-size:50px;
+}
+.blogImgSlider  .owl-next{
+    right:0;
+}
+.BlogAudio iframe{
+    width:100%;
+}
+.BlogVideo iframe{
+    width: 100%;
+    height: 400px;
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
