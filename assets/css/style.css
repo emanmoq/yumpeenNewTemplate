@@ -1812,21 +1812,24 @@ left:0;
 .Page.navigation{
     margin: 0 auto;
 }
-.newsEvent .page-item{
+ .page-item{
     line-height: 1.5;
 
     padding: 6px 5px;
 }
 .page-link{
     color: #333333;  
+    transition: all .3s ease-in-out;
 }
 
-.newsEvent .page-item:hover .page-link{
+ .page-item:hover .page-link{
     color:white;
     background-color:#e1a500;
+    transition: all .3s ease-in-out;
 }
 .page-item:first-child .page-link,.page-item:last-child .page-link{
     border-radius: 0;
+    transition: all .3s ease-in-out;
 }
 
 .page-link.prev  i {
@@ -2263,6 +2266,82 @@ top:50%;
     width: 100%;
     height: 400px;
 }
+.blog2ColCon{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 50px;
+}
+.SideBarBlog{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+}
+.SideBarBlog li{
+    background-color: #333333;
+    border-bottom: 1px solid #717171;
+    padding: 4px 0px 5px;
+}
+.SideBarBlog li:hover{
+    background-color:#e1a500;
+}
+.SideBarBlog li a{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 24px
+}
+.SideBarBlog li a span{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.blog2ColCon figure:before{
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;    
+}
+.blog2ColCon:hover figure:before{
+
+    opacity: .65
+}
+.blog2ColCon:hover figure figcaption,.blog2ColCon:hover figure figcaption a{
+    opacity: 1;
+}
+.topBlog2Col{
+    width: 100%;
+    margin: 20px 0px 15px 0px;
+}
+.topBlog2Col span{
+    border-right: 1px solid #dcdcdc;
+    font-size: 15px;
+    color: #666666;
+    margin: -5px 0 -2px;
+    padding-right: 15px;
+}
+.topBlog2Col span a{
+    color:#e1a500;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.blog2ColDesc h5{
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.blog2ColDesc p{
+    margin-bottom:5px;
+}
+
 @media (max-width:767px){
     .galleryCol{
         width:50%;
