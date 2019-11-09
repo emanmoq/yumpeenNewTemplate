@@ -2429,6 +2429,98 @@ font-weight: normal;
     margin-top:25px;
     margin-bottom:25px;
 }
+.EventDetailsDesc.BlogDesc{
+    border-bottom: 0;
+}
+.author{
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    padding: 20px 15px 13px 20px;
+    margin-bottom: 40px;
+}
+.authorDesc{
+    overflow: hidden;
+    padding-left: 20px;
+}
+.author figure{
+    width: 128px;
+}
+.autorSocial li{
+display:inline-block;
+margin-left: 20px;
+}
+.autorSocial {
+    float: right;
+    text-align: right;
+}
+.autorSocial li a{
+    font-size: 16px;
+    color: #666;
+}
+.autorSocial li a:hover{
+    color: #e1a500;
+}
+.authorDesc h6 { 
+    margin: -3px 0 9px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.authorDesc h6  a{
+    color: #2f2f2f;
+    font-family: 'Roboto Slab', serif;
+}
+.authorDesc p{
+    margin-bottom: 15px;
+    font-size: 14px;
+
+}
+.authorDesc h6 a:hover {
+    color: #23527c;}
+    .CommentSection{
+        margin-bottom: 40px;
+    }
+        .commentTitle{
+            margin-bottom:5px;
+        }
+    .CommentSection .commentTitle h5{
+        color: #2f2f2f;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;    
+            line-height: 1.2;
+        margin: 0px 0px 0px 0px;
+        font-size: 20px;
+    }
+.commentCont{
+    padding: 30px 0 30px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+.commentCont figure {
+        width: 108px;
+        float:left;
+}
+.commentDesc{
+    padding-left: 20px;
+}
+.commentDescHeader{
+    margin-bottom: 9px;
+    margin-top: -4px;
+
+}
+.commentDescHeader a{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+.commentDescHeader a span {
+        font-size: 14px;
+        padding-left: 20px;
+        border-left: 1px solid #e7e7e7;
+    
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
