@@ -570,7 +570,8 @@ figure:before{
     bottom: 10%;
     position: absolute;
     opacity: 0;
-    background-color: #e79800;}
+    background-color: #e79800;
+transition: .5s all;}
  figure figcaption{
     position: absolute;
     top: 50%;
@@ -1896,7 +1897,131 @@ color:#333333}
 .EventCont:hover figure figcaption{
     opacity: 1;
 }
+.rightSideCont{
+    padding: 30px;
+    background: #f9f9f9;
+    }
 
+    .widget h2{
+        font-size: 24px;
+        text-transform: uppercase;
+        margin: 0px 0px 15px 0px;
+    }
+    .sideSearch .form-control{
+        padding: 11px 15px 13px;
+        border: 1px solid #d7d7d7;
+        font-size: 16px;
+        color: #999999;
+    }
+    .sidearchives li:hover{
+        background: #f3f2f2;
+    }
+    .rightSideCont .sideLink{
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #333333 !important;
+        padding: 12px 10px;
+    }
+    .sidearchives .sideLink:hover{
+        color:#e1a500 !important;
+        margin-left: 5px;
+    }
+    .sidearchives .archivesMenu li:last-child{
+        border-bottom: 0;
+    }
+    .widget{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px #CCC;
+    }
+.tags .tagsMenu{
+    margin: -5px 0px 0px -5px;
+}
+
+.tagsMenu li{
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+.tagsMenu li a{
+    border: 1px solid #dcdcdc;
+    color: #777;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.tagsMenu li a:hover{
+    background-color: #e1a500;
+    color:white;
+}
+.recentPosts figure:before{
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+.recentPosts figure {
+    width: 40%;
+    position: relative;
+float: left;}
+.postText{
+    float: left;
+    width:50%;
+    margin-left:20px;
+}
+.postText a{
+    color: #2f2f2f;
+}
+.postText h6{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.postText span{
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    color: #999999;
+
+}
+.recentPostCont{
+    margin-bottom: 30px;
+}
+.recentPostCont:hover  .postText a{
+    color:#e1a500;
+}
+.recentPostCont:hover figure:before{
+    opacity: .7;
+    transition: .5s all;
+}
+.recentPostCont:hover figcaption,.recentPostCont:hover figcaption a{
+    opacity: 1;
+}
+.courseImg{
+    width:30%;
+    margin-right:5px;
+    display: inline-block;
+}
+.courseImg figure:before{
+width:100%;
+height:100%;
+left:0;
+top:0;
+}
+.courseImg:hover figure:before{
+opacity:.7;
+}.courseImg:hover figcaption,.courseImg:hover figcaption a{
+    opacity:1;
+    }
+    .courseImg figcaption a:hover{
+        color:white;
+    }
+    .coursesList figure a {
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: bold;
+  
+    }
 @media (max-width:767px){
     .galleryCol{
         width:50%;
