@@ -73,7 +73,9 @@ jQuery(function ($) {
         
     });
 
-
+	if($("select").length){
+		$('select').selectric();
+	}
 
 });
 
