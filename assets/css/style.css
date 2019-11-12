@@ -1837,7 +1837,7 @@ left:0;
     transition: all .3s ease-in-out;
 }
 
- .page-item:hover .page-link{
+ .page-item:hover .page-link,.page-item .page-link.active{
     color:white;
     background-color:#e1a500;
     transition: all .3s ease-in-out;
@@ -1846,6 +1846,7 @@ left:0;
     border-radius: 0;
     transition: all .3s ease-in-out;
 }
+
 
 .page-link.prev  i {
     margin-right: 12px;
@@ -2809,12 +2810,422 @@ background-color: #e79800;
 .courseReview figure{
     width: 37px;
     height: 37px;
-    border-radius: 100%;
+    display: inline-block;
 }
 .courseReview figure img{
-    border-radius: 100%;
+    border-radius:  50%;
+}
+.courseReview .ownerName{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 2px 0 0 15px;
+}
+.courseReview .ownerName:hover{
+    color:#e1a500;
+}
+.courseReview .rating{
+    display:inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin: 0;
+    float:right;}
+.courseReview  .rate span {
+    color: #ddd;
+    display: inline-block;
+    font-size: 24px;
+    position: relative;
+    width: auto;
+    line-height: 34px;
 }
 
+  .courseReview  .rate span:hover:before {
+    content: "\2605";
+    position: absolute;
+    color: gold;
+    }
+  .CourseRightSide{
+      background: transparent;
+  }
+  .coursesListCont:hover figure:before{
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+opacity: 0.65;
+  }
+  .coursesListCont figcaption a{
+      background-color:white;
+      font-size: 16px;
+      color: #000;
+      text-align: center;
+      display: inline-block;
+      opacity: 0;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      background-color: #fff;
+      line-height: 46px;
+  }
+  .coursesListCont figcaption a i{
+      line-height: 46px;
+  }
+  .courserHeader{
+    text-align: left;
+    margin: 0px 0 10px;
+  }
+  .courserHeader h5{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+   .coursesListCont:hover  .courserHeader h5{
+color:#e1a500;
+  }
+  .courseListDesc span{
+    font-size: 14px;
+    color: #666;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+
+  }
+  .courseListDesc span small{
+      color:#e1a500;
+      font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-left: 7px;
+}
+
+  .coursesListCont:hover figcaption,.coursesListCont:hover figcaption a{
+    opacity: 1;
+      }
+.coursesListCont .courseReview{
+    border:0;
+    padding:0;
+    margin-bottom: 15px;
+}
+.coursesListCont .courseReview .rating{
+    float: none;
+}
+.coursesListCont .courseReview .rating span{
+    line-height: 0;
+}
+.courseReview  span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 16px;
+    margin-right: 10px;
+}
+.coursesListCont{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+}
+.courseListDesc p{
+    margin: 0 0 23px;
+    color: #666666;
+}
+.courseListDesc a{
+    border: 1px solid #dddddd;
+    float: left;
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#333;
+    transition: all 0.3s ease-in-out;
+}
+.courseListDesc a:hover{
+    background-color:#e1a500;
+    color:white;
+    transition: all 0.3s ease-in-out;
+}
+.courseDetailsCont{
+    margin-top: -7px;
+    margin-bottom: 15px;
+}
+.courseDetailsCont h4{
+    font-size: 24px;
+    text-transform: uppercase;
+ margin:0;
+    color: #2f2f2f;
+}
+.courseTop{
+    margin-bottom: 14px;
+}
+.courseTop span{
+    font-size: 16px;
+    color: #999;
+    margin-right: 28px;
+}
+.courseTop span i{
+    margin-right: 9px;
+
+}
+.courseTop span a{
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+}
+.courseDetailsImg{
+    margin-bottom: 15px;
+}
+.courseDetailsImg figure:before{
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.15);
+    opacity: 1;
+}
+.courseDetailsImg figcaption {
+    margin: -45px auto 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.courseDetailsImg figcaption a {
+    width: 90px;
+    height: 90px;
+
+    border: 3px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    opacity: 1;
+    background-color:#e1a500;
+}
+.courseDetailsImg figcaption a i{
+    line-height: 85px;
+}
+.courseDetailsImg figcaption a:hover{
+   background-color:black
+}
+.courseTabs .nav-tabs{
+border: medium none;
+
+border-bottom: solid 1px #eee;
+}
+.courseTabs .nav-tabs li{
+    margin: 0px;
+}
+.courseTabs .nav-tabs li a{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 0;
+    background-color: #fff;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.courseTabs .nav-tabs li.active a{
+color:#e1a500
+}
+
+.courseTabs .nav-tabs li a::before {
+    transition: all 0.3s ease-in-out;
+    bottom: 0px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+.courseTabs .nav-tabs li.active a::before{
+    width:100%;
+    background-color: #e79800;
+    }
+    .courseDetailsTapsDesc{
+        border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    }
+    .courseDetailsTapHeader{
+        margin-bottom: 15px;
+    }
+    .courseDetailsTapHeader h3{
+    margin: 0px 0px 0px 0px; 
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+     color: #2f2f2f;
+    }
+    .courseDetailsTapsDesc p{
+        margin-bottom: 18px;
+    }
+    .courseTabs .tab-content{
+        padding: 20px 0 0 0;
+
+    }
+    .courseTapStudyTable{
+        border-bottom: 1px solid #e7e7e7;
+        margin-bottom: 20px;
+    }
+    .courseTapStudyTable h6{
+        margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+   .courseTapStudyTable .table {
+        margin-bottom: 46px;
+    }
+    .courseTapStudyTable .table th {
+        border: 1px solid #ccc !important;
+        background-color: #ddd;
+        font-size: 16px;
+        color: #333;
+        text-align: left;
+    }
+      .courseTapStudyTable .table tbody td {
+        padding: 12px 16px;
+    }
+    .courseTapStudyTable p{
+        margin-bottom: 28px;
+    }
+    .noBorder{
+        border-bottom: none;
+    margin-bottom: 0;
+    }
+    .courseDetailsGalery{
+        margin-bottom: 23px;
+    }
+    .courseDetailsGalery figure:hover:before{
+        left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.70;
+
+    }
+    .courseDetailsGalery figure figcaption a{
+      display: inline-block;
+        font-size: 18px;
+        color: #fff;
+        transform: scale(0);
+    }
+    .courseDetailsGalery figure:hover  figcaption a,.courseDetailsGalery figure:hover  figcaption {
+opacity: 1;
+    }
+    .courseDetailsGalery figure:hover  figcaption a{
+        transform: scale(1);
+    }
+    .courseDetailsSide{
+        padding: 30px;
+        background: #f9f9f9;
+    }
+    .courseDetailsSide .RegisterCont{
+        width: 100%;
+        padding: 30px;
+        border: 1px solid #e0e0e0;
+        margin-bottom: 30px;
+    }
+    .applyBtn{
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        padding: 15px 30px; 
+        background-color:#e79800;
+        display: block;
+    }
+    .applyBtn:hover{
+        background: #000;
+        color:white;
+    }
+    .regList{
+        width: 100%;
+        padding: 27px 0 0 0;
+    }
+    .regList li{
+        text-align: left;
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 7px;
+    }
+    .regList li .courseDetailsPrice{
+        color: #13ab1e;
+    font-weight: bold;
+    }
+    .regList li:last-child {
+        margin-bottom: -7px;
+    }
+    .regList .rate {
+        float: left;
+        margin: 6px 20px 0px;
+        line-height: normal;
+    }
+.regList .rate span{
+line-height: 29px;
+font-size: 24px;
+margin: 0 -5px;
+line-height: 10px;
+}
+
+.regList li  span {
+    float: left;
+}
+.teacherSec figure{
+    width: 75px;
+    margin-bottom: 25px;
+    float:left;
+}
+.teacherSec .teacherDesc{
+    padding-left: 15px;
+    float: left;
+}
+.teacherDesc h4{
+    margin: -5px 0 3px;
+}
+.teacherDesc small{
+    color: #e79800;
+    font-size: 14px;
+}
+.teacherSec p{
+    margin-bottom:15px;
+    float: left;
+}
+.teacherSocial{
+    float: left;
+}
+.teacherSocial li{
+margin-left:5px;
+display: inline-block
+}
+.teacherSocial li a{
+    display: block;
+    text-align: center;
+    border: 1px solid #999999;
+    color: #999999;
+    width: 36px;
+    height: 36px;
+  
+    font-size: 14px;
+}
+.teacherSocial li a:hover{
+    border: 1px solid #e79800 !important;
+    color: #e79800 !important;
+}
+.teacherSocial li a i{
+    line-height: 34px;
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
