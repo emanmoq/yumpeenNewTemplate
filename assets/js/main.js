@@ -135,6 +135,70 @@ jQuery(function ($) {
     }
     if($("area[rel^='prettyPhoto']").length){
 		$("area[rel^='prettyPhoto']").prettyPhoto();
-	}
+    }
+    if($('#map-canvas').length){
+		google.maps.event.addDomListener(window, 'load', initialize);
+    }
+    
+    function initialize() {
+        var MY_MAPTYPE_ID = 'custom_style';
+        var map;
+        var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+        var featureOpts = [
+            {
+              stylers: [
+                { hue: '#f9f9f9' },			
+                { visibility: 'simplified' },
+                { gamma: 0.7 },
+                { saturation: -200 },
+                { lightness: 15 },
+                { weight: 0.6 }
+              ]
+            },
+            {
+            featureType: "road",
+              elementType: "geometry",
+              stylers: [
+                { lightness: 30 },
+                { visibility: "simplified" }
+              ]
+            },
+            {
+              elementType: 'labels',
+              stylers: [		  
+                { visibility: 'on' }
+              ]
+            },
+            {
+              featureType: 'water',
+              stylers: [
+                { color: '#ffffff' }
+              ]
+            }
+        ];	
+    
+        var mapOptions = {
+            zoom: 13,
+            scrollwheel: false,
+            center: brooklyn,
+            mapTypeControlOptions: {
+              mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+            },
+            mapTypeId: MY_MAPTYPE_ID
+        };
+    
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+    
+        var styledMapOptions = {
+            name: 'Custom Style'
+        };
+    
+        var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+    
+        map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+    }
+
+	
 });
 
