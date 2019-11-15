@@ -114,7 +114,28 @@ h3{
 .navbar-nav{
     width: 100%;
     text-align: center;
-
+}
+  button.navbar-toggler{
+    position: relative;
+    background: #666;
+    border: none;
+    width: 40px;
+    height: 40px;
+    text-indent: -900em;
+    cursor: pointer;
+    border-radius: 0;
+}
+  button.navbar-toggler:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #fff;
+    top: 12px;
+    left: 0;
+    right: 0px;
+    margin: auto;
+    box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
 }
 .navbar-brand{
     float: left;
