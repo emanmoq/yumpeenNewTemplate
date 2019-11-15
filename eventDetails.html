@@ -241,7 +241,7 @@
                                 <a href="" class="EventDetailsbtn"><i class="fa fa-plus"></i>Local Expert</a>
                             </div>
                             <div class="mapSec text-center">
-                                <div id="map" class="map"></div>
+                                <div id="map-canvas" class="map-canvas"></div>
                                 <a class="EventDetailsbtn" href="#">Details</a>
                                 <a class="EventDetailsbtn" href="#">Organizer</a>
                                 <a class="EventDetailsbtn" href="#">Venue</a>
@@ -302,9 +302,11 @@
                                     <div class="galleryImg"><a href="#"><img src="assets/images/Events/gallery8.jpg"
                                                 alt=""></a></div>
                                 </div>
-                                <a class="eventbtn float-left" href="#"><i class="fa fa-angle-left"></i>PREVIOUS EVENT</a>
-                                <a class="eventbtn  next float-right" href="#">NEXT EVENT<i class="fa fa-angle-right"></i></a>
-                           
+                                <a class="eventbtn float-left" href="#"><i class="fa fa-angle-left"></i>PREVIOUS
+                                    EVENT</a>
+                                <a class="eventbtn  next float-right" href="#">NEXT EVENT<i
+                                        class="fa fa-angle-right"></i></a>
+
                             </div>
                         </div>
 
@@ -599,24 +601,14 @@
     <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxrnwTyDI68in8hdLFZC-3EHx1E_GhdhU&callback=initMap"
-        async defer></script>
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 5
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
-            });
-        }
-    </script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
-    <script type="text/javascript" src="assets/js/downcounter.js"></script>
+<!--    <script type="text/javascript" src="assets/js/downcounter.js"></script>
 
     <script type="text/javascript" src="assets/js/counter.js"></script>
-
+-->
 
 
 </body>
