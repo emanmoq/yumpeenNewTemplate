@@ -77,9 +77,11 @@ jQuery(function ($) {
 
   });
 
-  if ($("select").length) {
-    $('select').selectric();
-  }
+
+    $('select').selectric({
+      disableOnMobile: false,
+      nativeOnMobile: false
+    });
 
   if ($('#galleryFilter').length) {
     jQuery(window).load(function () {

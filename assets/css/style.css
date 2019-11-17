@@ -877,7 +877,7 @@ position: relative;}
 .galleryItem{
     width:100%;
 }
-.simpleGalleryItem .galleryItem figure  figcaption  a {
+.GallerySec .galleryItem figure  figcaption  a {
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -893,26 +893,25 @@ position: relative;}
 .galleryItem figure {
     margin: 0;
 }
-.simpleGalleryItem .galleryItem figure  figcaption  a  i{
+.GallerySec .galleryItem figure  figcaption  a  i{
     line-height: 50px;
 }
 .galleryItem:hover figure  figcaption  a{
 opacity:1;
 color: #e79800;
 }
-.simpleGalleryItem .simpleGalleryItem .galleryItem figure  figcaption  a:hover{
+ .GallerySec .galleryItem figure  figcaption  a:hover{
     background-color:black;
     color:white ;
 }
-.simpleGalleryItem .galleryItem figure  figcaption  h5 {
-   
+.GallerySec .galleryItem figure  figcaption  h5 {
     font-weight: normal;
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 6px;
 }
 
-.simpleGalleryItem .galleryItem figure figcaption  p{
+.GallerySec .galleryItem figure figcaption  p{
     margin: 0;
     color: #fff;
 
@@ -2867,27 +2866,21 @@ background-color: #e79800;
 .courseReview .ownerName:hover{
     color:#e1a500;
 }
-.courseReview .rating{
+.courseReview .rate{
     display: inline-block;
     unicode-bidi: bidi-override;
     direction: rtl;
     margin: 0;
     float:right;}
-.courseReview  .rating span {
+.courseReview  .rate span {
     color: #ddd;
     display: inline-block;
     font-size: 20px;
     position: relative;
     line-height: 34px;
+    margin-right:5px;
 }
-.courseReview  .rating span:hover:before {
-    content: "\2605";
-    position: absolute;}
-  .courseReview  .rating span:hover:before {
-    content: "\2605";
-    position: absolute;
-    color: gold;
-    }
+
   .CourseRightSide{
       background: transparent;
   }
@@ -4269,6 +4262,7 @@ text-align: center;
 .trainingCont ul li:nth-child(even) .trainingDate{
     float:none;
     text-align: center;
+    padding-left:0;
 }
 .errorImg{
     width: 100%;
@@ -4336,6 +4330,25 @@ margin-bottom:10px;
 h3{
     font-size:20px;
 }
+.errorCont  .errorDesc span {
+  top: -200px;
+    font-size: 150px;
+}
+.EventListDesc{
+    padding:30px;
+}
+.EventDetailsbtn{
+    padding: 8px 12px;
+}
+.BlogSliderImg {
+    top:-50px;
+}
+.socialSign a{
+    width:100%;
+}
+#galleryTabs li{
+    margin:10px 3px;
+}
 }
 @media (max-width:400px){
     .lang .publicbtn{
@@ -4344,5 +4357,11 @@ padding:7px 8px;
     body{line-height: 24px;}
     .galleryCol{
         width:100%
+    }
+    .countdown li{
+        width:66px;
+    }
+    .EventListDesc{
+        padding:30px;
     }
 }
