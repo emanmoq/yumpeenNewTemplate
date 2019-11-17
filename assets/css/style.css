@@ -1176,14 +1176,12 @@ span.day {
     color: #fff;
     margin-bottom: 30px;
     font-size: 20px;}
-    .trainingCont{
+    .trainingBox{
         width: 100%;
         margin-top: -11px;
     }
     .countDown {
-        color: transparent;
         display: inline-block;
-        list-style: outside none none;
         margin: 0 0 24px;
         padding: 0;
         text-align: center;
@@ -1191,28 +1189,29 @@ span.day {
   
         width: 100%;
     }
-    .countdown div {
-        background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    .countdown li {
+       background: rgba(255, 255, 255, 0.1);
         border: 1px solid #fff;
         display: inline-block;
         margin: 0 7px;
         padding: 8px 0 14px;
         width: 80px;
         position: relative;
-        z-index: 2;
+        z-index: 9999;
+        color:white !important
     }
-    .countdown  span {
+    .countdown li span {
         font-size: 24px;
         font-weight: bold;
         line-height: 39px;
-        color: #fff;
+        color: #fff !important;
     }
     .countdown  p {
         font-size: 14px;
         text-transform: capitalize;
         color: #fff;
     }
-    .trainingCont .harry{
+    .trainingBox .harry{
        
             font-size: 16px;
             color: #fff;
@@ -1496,7 +1495,6 @@ margin: 0 4px}
     text-transform: capitalize;
 }
 .copyrightText span a{
-    text-transform: uppercase;
     font-size: 14px;
     color: white;
     font-weight: 700;
@@ -1923,6 +1921,10 @@ color:#333333}
     position: relative;
     z-index: 2;
 }
+.EventImg  figure figcaption{
+    top:auto;
+    bottom:15px;
+}
 .EventImg figure:before{
     position: absolute;
     content: "";
@@ -1932,6 +1934,21 @@ color:#333333}
     width:100%;
     height:100%;
 }
+.EventCountDown li{
+display:inline-block;
+color:white;
+}
+.EventCountDown li span{
+    display:inline-block;
+    color:white;
+    margin:10px;
+    font-size:40px;
+    font-weight: bold;
+}
+.EventCountDown li p{
+    font-size:12px;
+}
+
 .EventCont:hover{
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
@@ -3960,6 +3977,170 @@ background-color:black;
         right: 15px;
         left:auto
     }
+
+    .modal button.close{
+        position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+    opacity: .2;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+     pointer-events: auto;
+    }
+  .RegBox{
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 45px 30px 45px;
+    text-align: center;
+}
+.RegBox h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px 0px 30px 0px;
+    color: #2f2f2f;}
+.RegBox .form-group{
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+.RegBox .form-control{
+    padding: 6px 20px 6px 40px;
+    font-size: 15px;
+    color: #66727f;
+    background-color: #f9f9f9;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.05) inset;
+    height: 50px;
+    border-radius: 3px;
+    border: 2px solid #d6d9dd;
+}
+.RegBox .form-group i{
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    left: 18px;
+    top: 16px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #a8b6c3;
+}
+.checkCont{
+    position: relative;
+}
+.RememberSec{
+    cursor: pointer;
+    margin-bottom: 10px;
+    width:100%;
+}
+.RememberSec span{
+    font-size: 12px;
+    color: #9baab9;
+    float: left;
+    line-height: 1.5;
+}
+.RememberSec .checkInput{
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;}
+.RememberSec .customcheckbox{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #d7dfe7;
+    border-radius: 3px;
+    margin-right: 10px;
+    float: left;
+}
+
+.customcheckbox:after{
+    content:"";
+    position: absolute;
+    left: 8px;
+    top: 3;
+    width: 5px;
+    height: 10px;
+    border: solid #88d3ff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+
+}
+.checkInput:checked  ~ .customcheckbox{
+    border:2px solid #88d3ff;
+}
+
+.checkInput:checked  ~ .customcheckbox:after {
+      display: block;
+    
+}
+.signbtn{
+    background-color: #e79800;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-align: center;
+    height: 48px;
+    text-transform: uppercase;
+}
+.signbtn:hover{
+    background-color:#636e80;
+}
+.socialSignHeader{
+    margin-bottom:15px;
+}
+.socialSignHeader h5 {
+    font-size: 14px;
+    color: #b2becd;}
+.socialSign a{
+    width: 50%;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    font-weight: normal;
+    text-align: left;
+    margin: 0px;
+    line-height: normal;
+}
+
+.socialSign  a i {
+    font-size: 18px;
+     margin-right:10px;
+}
+.socialSign .googleSign{
+    background-color: #dc4a38;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    
+}
+.socialSign .facebookSign{
+    background-color: #44619d;;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.RegisterModalFooter{
+    background-color: #f9fbfd;
+    border-top: solid 1px #ecf1f5;
+    padding: 18px 20px;
+    text-align: center;
+}
+.RegisterModalFooter a {
+    color: #72c8fa;
+}
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
@@ -4152,8 +4333,14 @@ margin-bottom:10px;
 .eventNewsDesc:before{
     right:0;
 }
+h3{
+    font-size:20px;
+}
 }
 @media (max-width:400px){
+    .lang .publicbtn{
+padding:7px 8px;
+    }
     body{line-height: 24px;}
     .galleryCol{
         width:100%
