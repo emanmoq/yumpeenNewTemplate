@@ -333,7 +333,7 @@
                                 <a href="" class="EventDetailsbtn"><i class="fa fa-plus"></i>Local Expert</a>
                             </div>
                             <div class="mapSec text-center">
-                                <div id="map-canvas" class="map-canvas"></div>
+                                <div id="EventMap" class="EventMap"></div>
                                 <a class="EventDetailsbtn" href="#">Details</a>
                                 <a class="EventDetailsbtn" href="#">Organizer</a>
                                 <a class="EventDetailsbtn" href="#">Venue</a>
@@ -697,10 +697,71 @@
     <script type="text/javascript" src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
-
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        if ($('#EventMap').length) {
+            google.maps.event.addDomListener(window, 'load', initialize);
+        }
 
+        function initialize() {
+            var MY_MAPTYPE_ID = 'custom_style';
+            var map;
+            var brooklyn = new google.maps.LatLng(40.6743890, -73.9455);
+            var featureOpts = [
+                {
+                    stylers: [
+                        { hue: '#f9f9f9' },
+                        { visibility: 'simplified' },
+                        { gamma: 0.7 },
+                        { saturation: -200 },
+                        { lightness: 15 },
+                        { weight: 0.6 }
+                    ]
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [
+                        { lightness: 30 },
+                        { visibility: "simplified" }
+                    ]
+                },
+                {
+                    elementType: 'labels',
+                    stylers: [
+                        { visibility: 'on' }
+                    ]
+                },
+                {
+                    featureType: 'water',
+                    stylers: [
+                        { color: '#ffffff' }
+                    ]
+                }
+            ];
 
+            var mapOptions = {
+                zoom: 13,
+                scrollwheel: false,
+                center: brooklyn,
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+                },
+                mapTypeId: MY_MAPTYPE_ID
+            };
+
+            map = new google.maps.Map(document.getElementById('EventMap'),
+                mapOptions);
+
+            var styledMapOptions = {
+                name: 'Custom Style'
+            };
+
+            var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+            map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+        }
+    </script>
 
 </body>
 

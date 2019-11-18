@@ -2155,7 +2155,7 @@ opacity:.7;
 
     text-align: center;
     }
-    #map-canvas{
+    #map-canvas,#EventMap,#contact2Map{
         height: 350px;
         width: 100%;
         margin-bottom:30px;
@@ -4134,6 +4134,45 @@ background-color:black;
     cursor: pointer;
     opacity: .5;
 }
+@media(min-width:768px) and (max-width:1024px){
+    .rightSideCont{
+        padding:30px 5px;
+    }
+    .Categories .col-md-6{
+        width:100% !important
+    }
+    .navbar-brand{
+        width:50%;
+    }
+    .navbar{
+        width:100%;
+    }
+    .headerSec .contactUs{
+        display:none;
+    }
+    .container .row div{
+        max-width:100%;
+        flex: 0 0 100%;
+    }
+    .headerNav{
+        float:left;
+    }
+    .EduConent{
+        width:100%;
+        float: none;
+    }
+    #universityEdu:before{
+        display: none;
+    }
+    .newContainer figure figcaption{
+       left:0;
+        right: auto;
+    }
+    .trainingImg{
+        display:none;
+    }
+
+}
 @media (max-width:767px){
     .galleryCol{
         width:50%;
@@ -4348,6 +4387,17 @@ h3{
 }
 #galleryTabs li{
     margin:10px 3px;
+}
+.mapDesc {
+    position: static;
+    margin: 60px 0px 0px 0px;
+    width: 100%;
+}
+.paddingSection{
+    padding: 20px 0;;
+}
+.overlay:before{
+    bottom:auto;
 }
 }
 @media (max-width:400px){
