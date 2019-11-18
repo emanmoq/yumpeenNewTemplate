@@ -1753,6 +1753,10 @@ z-index: -1;
 .studentDesc a:hover{
     color:#e79800;
 }
+.studentsCarusel{
+    width:50%;
+    float:left;
+}
 .studentsCarusel  .owl-nav{
     float: right;
 }
@@ -1783,6 +1787,7 @@ border:0;
     }
     .studentsImages{
         text-align: right;
+        float:left;
     }
     .studentImg figure img{
         filter: grayscale(100%);
@@ -4135,6 +4140,13 @@ background-color:black;
     opacity: .5;
 }
 @media(min-width:768px) and (max-width:1024px){
+    .studentsCarusel{
+        width:100%;
+    }
+    .studentsImages{
+        width:100%;
+       
+    }
     .rightSideCont{
         padding:30px 5px;
     }
@@ -4158,11 +4170,10 @@ background-color:black;
         float:left;
     }
     .EduConent{
-        width:100%;
-        float: none;
+        width:70%;
     }
     #universityEdu:before{
-        display: none;
+        width:30%;
     }
     .newContainer figure figcaption{
        left:0;
@@ -4174,6 +4185,12 @@ background-color:black;
 
 }
 @media (max-width:767px){
+    .studentsCarusel{
+        width:100%;
+    }
+    .studentsImages{
+        width: 100%;;
+    }
     .galleryCol{
         width:50%;
     }

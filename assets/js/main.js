@@ -1,5 +1,6 @@
 jQuery(function ($) {
 
+  
 
   $('.heroSlider').owlCarousel({
     loop: true,
@@ -50,7 +51,7 @@ jQuery(function ($) {
         dots: false,
       },
       600: {
-        items: 2,
+        items: 1,
         dots: false,
       },
       1000: {
@@ -63,9 +64,10 @@ jQuery(function ($) {
   });
   $(".imageSlider").owlCarousel({
     loop: true,
-    autoplay: 3000,
+    autoplay: true,
     items: 1,
     dots: false,
+    itemsTablet: [600,1],
 
   });
   $('.studentsCarusel').owlCarousel({
