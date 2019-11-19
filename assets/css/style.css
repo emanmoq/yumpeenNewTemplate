@@ -4162,7 +4162,7 @@ background-color:black;
     .headerSec .contactUs{
         display:none;
     }
-    .container .row div{
+    .headerSec .container .row div{
         max-width:100%;
         flex: 0 0 100%;
     }
@@ -4182,7 +4182,20 @@ background-color:black;
     .trainingImg{
         display:none;
     }
-
+    #galleryTabs li a{
+        padding:3px 10px;
+    }
+    .errorImg {
+        width:100%;
+    }
+    .mapDesc {
+        position: static;
+        margin: 60px 0px 0px 0px;
+        width: 100%;
+    }
+    .overlay:before{
+        bottom:auto;
+    }
 }
 @media (max-width:767px){
     .studentsCarusel{
